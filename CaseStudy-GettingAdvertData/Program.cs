@@ -13,8 +13,8 @@ namespace CaseStudy_GettingAdvertData
         {
             string url = "https://www.sahibinden.com";
 
-            List<string> liste = GetAdvertLinks(url);
-            foreach (var link in liste)
+            List<string> advertLinkList = GetAdvertLinks(url);
+            foreach (var link in advertLinkList)
             {
                 Console.WriteLine(link);
             }
@@ -38,7 +38,7 @@ namespace CaseStudy_GettingAdvertData
         /// <returns></returns>
         static List<string> GetAdvertLinks(string url)
         {
-            List<string> adLinks = new List<string>();
+            List<string> advertLinks = new List<string>();
 
             var html = GetHtml(url);
 
@@ -54,11 +54,11 @@ namespace CaseStudy_GettingAdvertData
                 if (link.StartsWith("/ilan"))
                 {
                     link = new Uri(baseUrl, link).AbsoluteUri;
-                    adLinks.Add(link);
+                    advertLinks.Add(link);
                 }
             }
 
-            return adLinks;
+            return advertLinks;
         }
 
 
