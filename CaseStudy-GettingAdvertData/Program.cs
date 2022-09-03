@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using HtmlAgilityPack;
 using ScrapySharp.Network;
 
@@ -93,7 +94,7 @@ namespace CaseStudy_GettingAdvertData
                 if (html.SelectSingleNode(xpath1) == null)
                 {
                     if (html.SelectSingleNode(xpath2) != null)
-                        advert.Price = html.SelectSingleNode(xpath2).InnerText;
+                        advert.Price = ConvertPriceToNumber(html.SelectSingleNode(xpath2).InnerText.Trim());
                     else
                     {
                         var priceNode = html.SelectSingleNode(xpath3);
@@ -103,7 +104,7 @@ namespace CaseStudy_GettingAdvertData
                                 item.Remove();
                         }
 
-                        advert.Price = priceNode.InnerText.Trim();
+                        advert.Price = ConvertPriceToNumber(priceNode.InnerText.Trim());
                     }
                 }
                 else
@@ -114,7 +115,7 @@ namespace CaseStudy_GettingAdvertData
                         item.Remove();
                     }
 
-                    advert.Price = priceNode.InnerText.Trim();
+                    advert.Price = ConvertPriceToNumber(priceNode.InnerText.Trim());
 
                 }
 
@@ -123,6 +124,29 @@ namespace CaseStudy_GettingAdvertData
 
 
             return adverts;
+        }
+
+        /// <summary>
+        /// This method used for converting price information to numerical data.
+        /// </summary>
+        /// <param name="priceText"></param>
+        /// <returns></returns>
+        static int ConvertPriceToNumber(string priceText)
+        {
+            int price;
+            string text = string.Empty;
+            foreach (var item in priceText)
+            {
+                if (char.IsDigit(item))
+                    text += item;
+            }
+
+            if (text == "")
+                price = 0;
+            else
+                price = Convert.ToInt32(text);
+
+            return price;
         }
 
 
