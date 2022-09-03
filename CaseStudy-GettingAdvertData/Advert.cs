@@ -6,6 +6,6 @@
     class Advert
     {
         public string Title { get; set; }
-        public string Price { get; set; }
+        public int Price { get; set; }
     }
 }
