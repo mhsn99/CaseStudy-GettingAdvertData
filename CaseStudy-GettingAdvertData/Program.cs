@@ -14,9 +14,13 @@ namespace CaseStudy_GettingAdvertData
             string url = "https://www.sahibinden.com";
 
             List<string> advertLinkList = GetAdvertLinks(url);
-            foreach (var link in advertLinkList)
+            var advertsInfo = GetAdvertsInfo(advertLinkList);
+
+            foreach (var advert in advertsInfo)
             {
-                Console.WriteLine(link);
+                Console.WriteLine("Title Advert: " + advert.Title);
+                Console.WriteLine("Price: " + advert.Price);
+                Console.WriteLine("-----------------------------");
             }
         }
 
@@ -59,6 +63,66 @@ namespace CaseStudy_GettingAdvertData
             }
 
             return advertLinks;
+        }
+
+        /// <summary>
+        /// This method takes the names and price information of the adverts. Returns the informations in the form of a list.
+        /// </summary>
+        /// <param name="linkList"></param>
+        /// <returns></returns>
+        static List<Advert> GetAdvertsInfo(List<string> linkList)
+        {
+            var adverts = new List<Advert>();
+
+            foreach (var link in linkList)
+            {
+                System.Threading.Thread.Sleep(5000); // It refers to the waiting time between requests to the sites in order to avoid the 429 code error
+                
+                var html = GetHtml(link);
+                
+                var advert = new Advert();
+                
+                advert.Title = html.SelectSingleNode("//h1").InnerText;
+
+
+                // The products' prices are kept in 3 different xpath.
+                string xpath1 = "//div[@class=\"classifiedInfo \"]/h3";
+                string xpath2 = "//div[@class=\"classifiedInfo \"]/span";
+                string xpath3 = "//div[@class=\"price-section \"]/span";
+
+                if (html.SelectSingleNode(xpath1) == null)
+                {
+                    if (html.SelectSingleNode(xpath2) != null)
+                        advert.Price = html.SelectSingleNode(xpath2).InnerText;
+                    else
+                    {
+                        var priceNode = html.SelectSingleNode(xpath3);
+                        foreach (var item in priceNode.SelectNodes("*"))
+                        {
+                            if (item.Attributes["class"].Value != "currency")
+                                item.Remove();
+                        }
+
+                        advert.Price = priceNode.InnerText.Trim();
+                    }
+                }
+                else
+                {
+                    var priceNode = html.SelectSingleNode(xpath1);
+                    foreach (var item in priceNode.SelectNodes("*"))
+                    {
+                        item.Remove();
+                    }
+
+                    advert.Price = priceNode.InnerText.Trim();
+
+                }
+
+                adverts.Add(advert);
+            }
+
+
+            return adverts;
         }
 
 
