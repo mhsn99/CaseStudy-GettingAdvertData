@@ -1,0 +1,214 @@
+[
+  {
+    "Title": "Tam m??stakil S??per L??x villa",
+    "Price": 25000000
+  },
+  {
+    "Title": "Ni??anta???? Abdi ??pek??i Caddede K????e Manzaral?? Sat??l??k Konut",
+    "Price": 18000000
+  },
+  {
+    "Title": "2020 AUD?? A4 QUATRO D??ESEL4.0 TD?? HATA BOYA YOK PAZARLIKSIZ",
+    "Price": 1514000
+  },
+  {
+    "Title": "Ev i??lerine yard??mc?? g??ler y??zl??, deneyimli bayan ar??yoruz",
+    "Price": 8000
+  },
+  {
+    "Title": "KELEP??R 3 D??N??M,3 KATLI V??LLA ORMANIN YANINDA",
+    "Price": 2990000
+  },
+  {
+    "Title": "SEE-DO RXP BAY?? ??IKI??LI. ??ZEL TASRIM.??THAL JETLERLE KARI??TIRMAYN",
+    "Price": 719750
+  },
+  {
+    "Title": "Sifir usul??ne uygun profesyonel yap??l??",
+    "Price": 385000
+  },
+  {
+    "Title": "SAH??B??NDEN HAR??KA DA??RE",
+    "Price": 1580000
+  },
+  {
+    "Title": "Villaya deneyimli tecr??beli yat??l?? yard??mc??",
+    "Price": 10000
+  },
+  {
+    "Title": "bu fiyata bu projede daire yok SON DA??RE ??LK GELEN ALIR",
+    "Price": 1650000
+  },
+  {
+    "Title": "K??RALIK MOTORYAT 699 TL",
+    "Price": 699
+  },
+  {
+    "Title": "AC??L SATILIK ESENLER DE G??VENEVLER S??TES??NDE G??VENL??KL?? 3+1",
+    "Price": 2550000
+  },
+  {
+    "Title": "2021 Model 1.5 PHEV Lansman Rengi Hybrid",
+    "Price": 2950000
+  },
+  {
+    "Title": "BETTER CALL TUDOR! GENELDEN ??ZELE HEM DE HER D??ZEYE ??NG??L??ZCE!",
+    "Price": 100
+  },
+  {
+    "Title": "MASLAK B??LGES??NDE TESL??ME YAKIN 3+1 VATANDA??LI??A UYGUN L??KSDA??RE",
+    "Price": 14350000
+  },
+  {
+    "Title": "Sch??mne Asans??rl?? ??elik ????mine Haznesi ???? Y??nl?? 70 cm",
+    "Price": 16550
+  },
+  {
+    "Title": "BORA COMFORTL??NE",
+    "Price": 190000
+  },
+  {
+    "Title": "SANDIK MOTORLU 5.20d VAKUM",
+    "Price": 697000
+  },
+  {
+    "Title": "2014 MODEL HATASIZ BOYASIZ CAM TAVAN LED FAR 174*** KM BEYAZ",
+    "Price": 685000
+  },
+  {
+    "Title": "SATLIK 40 Hp motorlu s??per bak??ml?? 3 50 Fiber tabanl?? BOT",
+    "Price": 155000
+  },
+  {
+    "Title": "Barak K??pekler",
+    "Price": 0
+  },
+  {
+    "Title": "-E VISION-2022 MERCEDES S580 4 MAT??C MAYBACH",
+    "Price": 15850000
+  },
+  {
+    "Title": "C??VATALI ??EL??K RAF - ??MALATTAN SIFIR - 3 G??Z 4 KATLI 31X93",
+    "Price": 850
+  },
+  {
+    "Title": "FULL DEN??Z K??RFEZ MANZARALI 3+1 KOMPLE YEN??LEN??YOR...",
+    "Price": 15000
+  },
+  {
+    "Title": "BMW F10 F20 F22 F30 G30 X1 X3 X5 E87 E60 E90 PAKET SES S??STEM??",
+    "Price": 11499
+  },
+  {
+    "Title": "SEL??M OTOMOT??VDEN 2022 MODEL KUGA",
+    "Price": 1125000
+  },
+  {
+    "Title": "BY.BEYOGLUAUTO C??FT RENK ICON EXTRALI TAM FATURALI %18",
+    "Price": 796000
+  },
+  {
+    "Title": "2018 114 PS 54000 BINDE HATASIZ BOYAS??Z FULL YAPILI V??P",
+    "Price": 695000
+  },
+  {
+    "Title": "SATILIK KULE V??N??",
+    "Price": 1450000
+  },
+  {
+    "Title": "AKB??K MERKEZDE DEN??ZE 150 METRE HAVUZLU L??KS S??TEDE 2+1 DA??RE",
+    "Price": 2450000
+  },
+  {
+    "Title": "TR AZ OLAN SATLIK FORD V??GNELA TRAMERS??Z, GARAJ ARACI. 76 B??N KM",
+    "Price": 1200000
+  },
+  {
+    "Title": "Merkezi konumda AVM i??erisinde Spor Salonu",
+    "Price": 11000000
+  },
+  {
+    "Title": "SIFIR KURUYEM???? DOLABI ISITMALI ??EREZ REYONU LOKUMLUK KASABANKO",
+    "Price": 7000
+  },
+  {
+    "Title": "Termal 1+1 Sat??l??k 24 Saat Termal Sulu Daire",
+    "Price": 1020000
+  },
+  {
+    "Title": "K??A CEED D??ZEL + ELEKTR??KL?? (HYBR??D) FULL DOLU PAKET",
+    "Price": 878000
+  },
+  {
+    "Title": "CARENA - 2022 POLESTAR 2 LONG RANGE SO??UTMA+ISITMA+550km MENZ??L",
+    "Price": 2290000
+  },
+  {
+    "Title": "CAM TAVANLI OTOMAT??K FULL PAKET SORUNSUZ ??20",
+    "Price": 435000
+  },
+  {
+    "Title": "AKEL OTOMOT??V 2019 A180d AMG SEDAN FULL BAY???? 52.000 km",
+    "Price": 1020000
+  },
+  {
+    "Title": "AZ??ZO??LU P l a z a &#039;dan 2018 ORJ??NAL Koltuklu 16+1 DELUX-X Paket",
+    "Price": 747500
+  },
+  {
+    "Title": "SIRADANIN DI??INDA KEND??N?? ??ZEL H??SSEDENLER ??????N..BAH??EC??K MODERN",
+    "Price": 6650000
+  },
+  {
+    "Title": "K??????K??AMLICA&#039;DA 180 M2 ARSA ????ER??S??NDE 350 M2 M??STAK??L EV",
+    "Price": 8500000
+  },
+  {
+    "Title": "FABR??KADAN PUF??D??K K????E T??M T??RK??YE GENEL?? TESL??MAT",
+    "Price": 5949
+  },
+  {
+    "Title": "SAH??B??NDEN;??ANDARLI B??MEYKO S??TES??NDE,DEN??Z VE ADALAR MANZARALI",
+    "Price": 4850000
+  },
+  {
+    "Title": "Ayl??k Ort. 103.000??? - 207.000??? K??r Eden ??irket - SATILIK! -",
+    "Price": 14990000
+  },
+  {
+    "Title": "ALG??N ADRESS MUHTE??EM KONUMDA T??CAR?? DE??ER?? Y??KSEK D??KKANLAR",
+    "Price": 3830000
+  },
+  {
+    "Title": "0 FA??Z, 48 AY VADE, BANKA KEF??L YOK. S??PER L??KS YA??AM KAL??TES??!",
+    "Price": 1350000
+  },
+  {
+    "Title": "SEL??M OTOMOT??VDEN 2022 MODEL 9+1 V??VARO",
+    "Price": 730000
+  },
+  {
+    "Title": "CADDE ??ZER??NDE DEVREN KAHVALTI SALONU A??IKLAMAYI OKUNUYUNUZ.",
+    "Price": 305000
+  },
+  {
+    "Title": "D??D??M AKB??K&#039;TE DEN??Z MANZARALI FIRSAT DA??RE !!",
+    "Price": 2590000
+  },
+  {
+    "Title": "SEYREK SAH??L&#039;DE",
+    "Price": 10250000
+  },
+  {
+    "Title": "SAH??B??NDEN BAIKMLARI YEN??",
+    "Price": 740000
+  },
+  {
+    "Title": "ESK????EH??R ANAYOL ??ZER??NDE TARIM VE HAYVANCILIK ??????N UYGUN YER",
+    "Price": 1600000
+  },
+  {
+    "Title": "16x81 1296 m?? SPOR SALONU HANGAR DEPO G??LE??Y??Z MARKA ??ADIR",
+    "Price": 574500
+  }
+]

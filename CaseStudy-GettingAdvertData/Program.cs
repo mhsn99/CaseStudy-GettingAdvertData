@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 using HtmlAgilityPack;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using ScrapySharp.Network;
 
 
@@ -13,16 +15,33 @@ namespace CaseStudy_GettingAdvertData
         static void Main(string[] args)
         {
             string url = "https://www.sahibinden.com";
+            double sumPrice = 0;
+            double averagePrice = 0;
 
             List<string> advertLinkList = GetAdvertLinks(url);
             var advertsInfo = GetAdvertsInfo(advertLinkList);
 
+            Console.WriteLine("-------------------------------------");
+            Console.WriteLine("****  Adverts Info ****");
+            // Showing Advert Info
             foreach (var advert in advertsInfo)
             {
                 Console.WriteLine("Title Advert: " + advert.Title);
                 Console.WriteLine("Price: " + advert.Price);
                 Console.WriteLine("-----------------------------");
             }
+
+            // Sum of Price and showing average price
+            foreach (var advert in advertsInfo)
+            {
+                sumPrice += advert.Price;
+            }
+            averagePrice = sumPrice/ advertsInfo.Count;
+
+            Console.WriteLine("Average Price: " + averagePrice);
+
+            // Saving data to txt file
+            SaveData(advertsInfo);
         }
 
         /// <summary>
@@ -31,8 +50,10 @@ namespace CaseStudy_GettingAdvertData
         /// <param name="url"></param>
         /// <returns></returns>
         static HtmlNode GetHtml(string url)
-        {
+        {   
+            
             WebPage page = _browser.NavigateToPage(new Uri(url));
+            _browser.ClearCookies();
             return page.Html;
         }
 
@@ -73,11 +94,13 @@ namespace CaseStudy_GettingAdvertData
         /// <returns></returns>
         static List<Advert> GetAdvertsInfo(List<string> linkList)
         {
+            int count = 1;
             var adverts = new List<Advert>();
 
             foreach (var link in linkList)
             {
-                System.Threading.Thread.Sleep(5000); // It refers to the waiting time between requests to the sites in order to avoid the 429 code error
+
+                System.Threading.Thread.Sleep(15000); // It refers to the waiting time between requests to the sites in order to avoid the 429 code error
                 
                 var html = GetHtml(link);
                 
@@ -119,9 +142,12 @@ namespace CaseStudy_GettingAdvertData
 
                 }
 
+                Console.WriteLine("{0}. advert's data is loaded...", count);
+                
+                count++;
+
                 adverts.Add(advert);
             }
-
 
             return adverts;
         }
@@ -149,6 +175,12 @@ namespace CaseStudy_GettingAdvertData
             return price;
         }
 
-
+        static void SaveData(List<Advert> adverts)
+        {
+            string json = JsonConvert.SerializeObject(adverts.ToArray());
+            json = JValue.Parse(json).ToString(Formatting.Indented);
+            File.WriteAllText("..\\..\\..\\advertsInfo.txt", json);
+            Console.WriteLine("The file with the name 'advertisE Info.txt' has been saved.!!!");
+        }
     }
 }
